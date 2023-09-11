@@ -52,7 +52,8 @@
 
     L.tileLayer('https://mts{s}.google.com/vt/lyrs=y@186112443&hl=x-local&src=app&x={x}&y={y}&z={z}&s=Galile', {
         attribution: '&copy; google idk',
-        subdomains: '0123'
+        subdomains: '0123',
+        smoothSensitivity: 1.5
     }).addTo(mymap);
 
     mymap.on("zoom", function () {
